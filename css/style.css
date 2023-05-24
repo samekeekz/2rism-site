@@ -35,9 +35,9 @@ body {
 .header-container{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     
 }
-
 
 
 .header-menu{
@@ -150,16 +150,18 @@ body {
 }
 
 
-.button-img{
+/* .button-img{
     vertical-align: sub;
     padding: 0 8px 0 26px;
-}
+} */
 
 
 .button{
     background-color: #7B61FF;
     border-radius: 12px;
     color: white;
+    border: none;
+
 
     transition: background-color 0.2s ease-in;
 }
