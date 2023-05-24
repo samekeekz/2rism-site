@@ -20,9 +20,7 @@ body {
     margin: 0 auto;
 }
 
-.header{
-    display: flex;
-    
+.header{    
     padding-top: 31px;
     background-color: black;
     background-image: url(/img/AdobeStock_251238249\ 1.jpg);
@@ -31,8 +29,16 @@ body {
     border-radius: 0 0 54px 54px;
     color: white;
     height: 800px;
-
 }
+
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
 
 .header-menu{
     display: flex;
