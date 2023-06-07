@@ -5,10 +5,11 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 ul, li {
+  padding: 0;
   list-style: none;
 }
 
@@ -78,6 +79,9 @@ ul, li {
   line-height: 21px;
   opacity: 0.7;
 }
+.list__item:hover {
+  color: rgb(231, 59, 231);
+}
 .list__item:first-child {
   opacity: 1;
 }
@@ -91,19 +95,25 @@ ul, li {
   align-items: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
+  text-align: right;
 }
 .avatar p {
   margin: 0;
-  font-weight: 600;
-}
-.avatar span {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
 }
 .avatar img {
   width: 48px;
   height: 48px;
+}
+.avatar__text-light {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 0.5;
+}
+.avatar__text-bold {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .form {
@@ -361,4 +371,77 @@ ul, li {
   font-size: 16px;
   line-height: 32px;
   color: #5B5B5B;
+}
+
+.footer {
+  padding: 120px 0 0 0;
+  background: #F9F9F9;
+  color: black;
+}
+.footer__flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item-1 {
+  max-width: 355px;
+}
+.item-1__logo {
+  margin-bottom: 24px;
+}
+.item-1 p {
+  margin: 0 0 35px 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #5B5B5B;
+}
+.item-1__icons img {
+  width: 32px;
+  height: 32px;
+  margin-right: 37px;
+}
+.item-1__icons:last-child {
+  margin-right: 0;
+}
+
+.strong-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #161414;
+}
+
+.item-2 {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.item-2__nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.item-2__nav li {
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #5B5B5B;
+}
+.item-2__nav li:first-child {
+  margin-bottom: 20px;
+}
+.item-2__nav li:last-child {
+  margin-bottom: 0;
+}
+
+.item-3 {
+  max-width: 388px;
+}
+.item-3 h3 {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
