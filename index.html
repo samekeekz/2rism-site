@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
     
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/libs/autoComplete/css/autoComplete.01.css">
+    <link rel="stylesheet" href="/libs/custom-select/custom-select.css">
+
     <title>2rism</title>
 </head>
 
@@ -30,7 +33,6 @@
                     </ul>
 
                     <div class="header-nav__avatar avatar">
-                        <!-- <p>Holla,<br><span>Ales Nesetril</span></p> -->
                         <span><p class="avatar__text-light">Holla,</p><p class="avatar__text-bold">Ales Nesetril</p></span>
                         <img src="/icons/Frame 7.png" alt="avatar">
                     </div>
@@ -46,33 +48,53 @@
                     </button>
                 </div>
 
-                <div class="header__form form">
-                    <div class="form-item">
-                        <img src="/icons/location.svg" alt="location-logo">
-                        <span>Location<p>Explore nearby destinations</p></span>
+
+                <form action="" class="form">
+
+                    <div class="form__input-wrapper form__input-location">
+                        <label for="location" class="form__label">Location</label>
+                        <input autocomplete="off" placeholder="Explore nearby destinations" type="text" class="form__input" id="location">
                     </div>
 
-                    <div class="form-item">
-                        <img src="/icons/bicycle.svg" alt="location-logo">
-                        <span>Activity<p>All Activities</p></span>
+                    <div class="form__input-wrapper form__input-activity">
+                        <label for="activity" class="form__label">Activity</label>
+                        <select placeholder="All activities" class="form__select" id="activity">
+                            <option value="All activities">All activities</option>
+                            <option value="Sailing">Sailing</option>
+                            <option value="Climbing">Climbing</option>
+                            <option value="Skiing">Skiing</option>
+                            <option value="Hiking">Hiking</option>
+
+
+                        </select>
                     </div>
 
-                    <div class="form-item">
-                        <img src="/icons/calendar.svg" alt="location-logo">
-                        <span>When<p>Choose a Date</p></span>
+
+                    <div class="form__input-wrapper form__input-date">
+                        <label for="date" class="form__label">When</label>
+                        <input type="date" class="form__date" id="date">
                     </div>
 
-                    <div class="form-item">
-                        <img src="/icons/people.svg" alt="location-logo">
-                        <span>Guests<p>1 guest</p></span>
+
+                    <div class="form__input-wrapper form__input-guests">
+                        <label for="" class="form__label">Guests</label>
+                        <select class="form__select" id="guests">
+                            <option value="1">1 guest</option>
+                            <option value="2">2 guests</option>
+                            <option value="3">3 guests</option>
+                            <option value="4">4 guests</option>
+                            <option value="4+">4+ guests</option>
+                        </select>
                     </div>
 
-                    <div class="form-item">
-                        <button>
-                            <img src="/icons/Vector copy 2.svg" alt="location-logo">
-                        </button>
-                    </div>
-                </div>
+
+                    <button class="button button-search">
+                        <img src="/icons/Vector copy 2.svg" alt="">
+                    </button>
+
+
+
+                </form>
 
             </div>
             
@@ -400,6 +422,14 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="/libs/autoComplete/autoComplete.min.js"></script>
+    <script src="/libs/custom-select/custom-select.min.js"></script>
+    <script src="/libs/easepick/easepick.min.js"></script>
+
+    <script src="/js/input-dest.js"></script>
+    <script src="/js/main.js"></script>
 
 </body>
 
