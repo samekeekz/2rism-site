@@ -21,6 +21,8 @@ ul, li {
 .header {
   background-color: black;
   color: white;
+  margin-bottom: 120px;
+  border-radius: 0px 0px 54px 54px;
 }
 .header__container {
   display: flex;
@@ -147,12 +149,14 @@ ul, li {
 }
 
 .second-section__flex-container {
+  padding-top: 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .title {
+  margin: 0;
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
@@ -170,7 +174,8 @@ ul, li {
   margin-bottom: 8px;
 }
 
-.third-section__head {
+.third-section__flex-container {
+  padding-top: 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -206,13 +211,6 @@ ul, li {
   font-size: 13px;
   line-height: 20px;
   color: #979797;
-}
-
-.third-section__flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .third-flex-item {
@@ -260,4 +258,71 @@ ul, li {
 }
 .hotels-address__second-part img:last-child {
   margin-right: 0;
+}
+
+.title-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fourth-section__flex-container {
+  padding-top: 64px;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+}
+.flex-box__img {
+  margin-right: 30px;
+}
+.flex-box__right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 32px;
+}
+.flex-box__right-side:last-child {
+  margin-right: 0;
+}
+.flex-box__right-side h3 {
+  max-width: 320px;
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #161414;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.icons-container img {
+  margin-right: 5.3px;
+}
+.icons-container p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #878787;
+}
+.icons-container__icons-item {
+  display: flex;
+  flex-direction: row;
+  margin-right: 26.67px;
+}
+
+.text_light {
+  margin: 0;
+  width: 320px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #5B5B5B;
 }/*# sourceMappingURL=style.css.map */
