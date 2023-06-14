@@ -880,6 +880,9 @@ select {
   line-height: 16px;
   color: #5B5B5B;
 }
+.subscribe__input > input {
+  width: 100%;
+}
 .subscribe__input::-moz-placeholder {
   width: 100%;
   font-weight: 500;
